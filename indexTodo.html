@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="todo.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="hero-title">TODO List</div>
+      <div class="hero-description">
+        Organize your work, to manage a better life experience
+      </div>
+      <section class="control">
+        <button id="btn-show-all">show all</button>
+        <button id="btn-filter-by-status">Filter by status</button>
+        <button id="btn-sort-by-priority">Sort by priority</button>
+        <button id="btn-sort-by-date">sort by date</button>
+      </section>
+    </section>
+
+    <div class="content">
+      <section class="list">
+        <table class="table" id="listTable">
+          <thead>
+            <tr>
+              <th>Task</th>
+              <th>Status</th>
+              <th>Due Date</th>
+              <th>Priority</th>
+
+              <th>delete</th>
+            </tr>
+          </thead>
+          <tbody id="taskrows"></tbody>
+        </table>
+      </section>
+
+      <section class="task-info">
+        <input type="text" placeholder="enter task name" id="in-name" />
+        <div class="status">
+          <label name="Status">Task Status</label>
+          <input type="checkbox" id="ch1" />
+        </div>
+        <input
+          type="number"
+          placeholder="enter priority number"
+          id="priority"
+        />
+        <input type="date" id="date" />
+        <hr />
+        <button id="add-btn">Add task</button>
+      </section>
+    </div>
+
+    <script src="main.js">
+    </script>
+  </body>
+</html>
